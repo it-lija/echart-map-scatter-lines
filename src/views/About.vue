@@ -22,6 +22,11 @@ export default {
           itemStyle: {					// 定义样式
             areaColor: '#0a3066',
             borderColor: '#fff'
+          },
+          emphasis: {
+            itemStyle: {
+              areaColor: '#33c2df'
+            }
           }
         },
         backgroundColor: '#071232', // 图表背景色

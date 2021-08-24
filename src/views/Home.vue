@@ -34,14 +34,15 @@ export default {
         <p style="color: rgba(255,255,255, .8)">省内代理数 &nbsp;<span style="color: #00aeff">${val.data.value}</span></p>` : ''
           }
         },
-        visualMap: {
-          min: 0,
-          max: 4,
-          inRange: {
-            color: ['#e0ffff', 'red', '#0f0', '#f0f']// 取值范围的颜色
-          },
-          show: false// 图注
-        },
+        visualMap: [
+          {
+            type: 'piecewise', // 定义为分段型 visualMap
+            pieces: [
+              { value: 0, label: '123（自定义特殊颜色）', color: 'grey' }, // 表示 value 等于 123 的情况。
+              { value: 1, label: '123（自定义特殊颜色）', color: 'red' }
+            ],
+            textStyle: { color: '#fff' }
+          }],
         backgroundColor: '#071232',
         series: [
           {
@@ -63,6 +64,11 @@ export default {
             itemStyle: {
               areaColor: '#0a3066',
               borderColor: '#fff'
+            },
+            emphasis: {
+              itemStyle: {
+                areaColor: '#33c2df'
+              }
             }
           }
         ]
