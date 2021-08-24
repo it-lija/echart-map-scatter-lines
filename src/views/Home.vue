@@ -63,12 +63,12 @@ export default {
             itemStyle: {
               areaColor: '#0a3066',
               borderColor: '#fff'
-            },
-            emphasis: {
-              itemStyle: {
-                areaColor: '#33c2df'
-              }
             }
+            // emphasis: {
+            //   itemStyle: {
+            //     areaColor: '#33c2df'
+            //   }
+            // }
           }
         ]
       }
