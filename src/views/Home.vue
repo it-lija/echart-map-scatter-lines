@@ -43,7 +43,6 @@ export default {
             ],
             textStyle: { color: '#fff' }
           }],
-        backgroundColor: '#071232',
         series: [
           {
             name: 'china',

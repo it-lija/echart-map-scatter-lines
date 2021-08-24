@@ -29,7 +29,6 @@ export default {
             }
           }
         },
-        backgroundColor: '#071232', // 图表背景色
         series: [
           {
             name: '点', // series名称
